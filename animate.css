@@ -1,0 +1,69 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(.75, .75, 1);
+    }
+
+    70% {
+        opacity: 0;
+        transform: scale3d(.75, .75, 1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.left_side_text1 {
+    animation: fadeIn 1.5s cubic-bezier(.39, -1.05, .58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: left right;
+}
+
+.left_side_text2 {
+    animation: fadeIn 2.5s cubic-bezier(.39, -1.05, .58, 1.95);
+    transform-origin: center bottom;
+}
+
+.left_side_text3 {
+    animation: fadeIn 4s cubic-bezier(.39, -1.05, .58, 1.95);
+    transform-origin: center bottom;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  .htmline div{
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+  }
+  .animated {
+    animation: progress 1s ease-in;
+}
+  @keyframes progress{
+    from {
+        width:0%
+    }
+}
+.animate{
+    transition: 1s;
+    
+
+}
